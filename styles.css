@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./asset/background.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+h1{
+    text-align: center;
+}
+.stopwatch {
+    text-align: center;
+    background-color: rgba(255, 254, 253, 0.169);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    font-size: 3em;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #0099ff;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .stopwatch {
+        width: 80%;
+    }
+}
